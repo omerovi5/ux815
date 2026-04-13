@@ -1,17 +1,16 @@
 <!-- ========================= -->
-<!-- index.html (Home/About) -->
+<!-- projects.html -->
 <!-- ========================= -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Haris Omerovic</title>
+  <title>Projects</title>
   <link rel="stylesheet" href="styles.css">
   <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-  <!-- NAVBAR -->
   <nav class="navbar">
     <div class="logo">Haris Omerovic</div>
     <ul class="nav-links">
@@ -22,24 +21,25 @@
     </ul>
   </nav>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <h1 class="glow">Game Designer & Developer</h1>
-    <p>UI/UX focused developer passionate about creating immersive experiences.</p>
-  </section>
+  <section class="projects">
+    <h1 class="underline">Projects</h1>
 
-  <!-- ABOUT SECTION -->
-  <section class="about">
-    <h2>About Me</h2>
-    <p>
-      I'm Haris, a game designer specializing in UI and gameplay systems.
-      I love building polished experiences and experimenting with mechanics.
-    </p>
+    <div class="project-card">
+      <h2>Project 1</h2>
+      <p>Short description of your project.</p>
+      <a href="project1.html">View Details</a>
+    </div>
+
+    <div class="project-card">
+      <h2>Project 2</h2>
+      <p>Short description of your project.</p>
+      <a href="project2.html">View Details</a>
+    </div>
+
   </section>
 
   <script>
-    ScrollReveal().reveal('.hero', { delay: 200, distance: '50px', origin: 'bottom' });
-    ScrollReveal().reveal('.about', { delay: 400, distance: '50px', origin: 'bottom' });
+    ScrollReveal().reveal('.project-card', { interval: 200, distance: '30px', origin: 'bottom' });
   </script>
 </body>
 </html>

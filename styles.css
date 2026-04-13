@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0a0a0a;
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #111;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+/* UNDERLINE HOVER EFFECT */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #00ffff;
+  transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* GLOW TEXT */
+.glow {
+  text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* PROJECTS */
+.projects {
+  padding: 50px;
+}
+
+.project-card {
+  background: #111;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+/* VIDEO */
+.video-container video {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+}
+
+/* UNDERLINE TITLE */
+.underline {
+  border-bottom: 2px solid #00ffff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
