@@ -1,6 +1,3 @@
-<!-- ========================= -->
-<!-- index.html (Home/About) -->
-<!-- ========================= -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,35 +8,116 @@
   <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
+
   <!-- NAVBAR -->
   <nav class="navbar">
     <div class="logo">Haris Omerovic</div>
     <ul class="nav-links">
-      <li><a href="index.html">Home/About</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
       <li><a href="resume.html">Resume</a></li>
-      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="projects.html">Projects</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- HERO SECTION -->
+  <!-- HERO -->
   <section class="hero">
-    <h1 class="glow">Game Designer & Developer</h1>
-    <p>UI/UX focused developer passionate about creating immersive experiences.</p>
+    <div class="hero-inner">
+      <p class="hero-tag">Game Designer &amp; Developer</p>
+      <h1 class="hero-title">Hi, I'm Haris Omerovic.</h1>
+      <p class="hero-sub">
+        UI/UX focused developer passionate about creating immersive,
+        polished experiences — from gameplay systems to user interfaces.
+      </p>
+      <div class="hero-actions">
+        <a href="projects.html" class="btn-primary">View My Work</a>
+        <a href="contact.html" class="btn-outline">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+        <path d="M6 12l10 10 10-10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
   </section>
 
-  <!-- ABOUT SECTION -->
+  <!-- ABOUT -->
   <section class="about">
-    <h2>About Me</h2>
-    <p>
-      I'm Haris, a game designer specializing in UI and gameplay systems.
-      I love building polished experiences and experimenting with mechanics.
-    </p>
+    <div class="about-inner">
+      <div class="about-text">
+        <h2 class="section-heading">About Me</h2>
+        <p>
+          I'm a game designer specializing in UI and gameplay systems. I love
+          building polished, immersive experiences and experimenting with mechanics
+          that feel satisfying to interact with.
+        </p>
+        <p>
+          Currently pursuing a Master's of Science in User Experience Design, I've shipped projects in small
+          teams and enjoy the intersection of design thinking and technical
+          implementation.
+        </p>
+        <a href="resume.html" class="btn-outline" style="margin-top: 1.5rem; display: inline-block;">View My Resume</a>
+      </div>
+      <div class="about-skills">
+        <h3>Skills &amp; Tools</h3>
+        <ul class="skill-list">
+          <li>Unity / C#</li>
+          <li>UI/UX Design</li>
+          <li>Gameplay Systems</li>
+          <li>Figma</li>
+          <li>HTML / CSS / JS</li>
+          <li>Version Control (Git)</li>
+        </ul>
+      </div>
+    </div>
   </section>
+
+  <!-- FEATURED PROJECTS STRIP -->
+  <section class="featured">
+    <div class="featured-inner">
+      <h2 class="section-heading">Featured Projects</h2>
+      <div class="featured-grid">
+
+        <article class="feat-card">
+          <div class="feat-img feat-img--1"></div>
+          <div class="feat-body">
+            <h3>Volley-Guns</h3>
+            <p>An indie game about playing volleyball with firearms, developed over a year with my Game Design cohort. Coming soon to Steam.</p>
+            <a href="projects.html" class="feat-link">More →</a>
+          </div>
+        </article>
+
+        <article class="feat-card">
+          <div class="feat-img feat-img--2"></div>
+          <div class="feat-body">
+            <h3>Backyard Brawl</h3>
+            <p>A party game with two modes: Candy Collectathon (trick-or-treat royale) and LaserBall (arcade soccer). Built for fast, fun multiplayer.</p>
+            <a href="projects.html" class="feat-link">More →</a>
+          </div>
+        </article>
+
+      </div>
+      <div class="featured-more">
+        <a href="projects.html" class="btn-primary">All Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Haris Omerovic</p>
+    <nav class="footer-links">
+      <a href="resume.html">Resume</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </footer>
 
   <script>
-    ScrollReveal().reveal('.hero', { delay: 200, distance: '50px', origin: 'bottom' });
-    ScrollReveal().reveal('.about', { delay: 400, distance: '50px', origin: 'bottom' });
+    ScrollReveal().reveal('.hero-inner',    { delay: 150, distance: '40px', origin: 'bottom', duration: 700 });
+    ScrollReveal().reveal('.about-inner',   { delay: 150, distance: '40px', origin: 'bottom', duration: 700 });
+    ScrollReveal().reveal('.feat-card',     { delay: 150, distance: '40px', origin: 'bottom', duration: 700, interval: 120 });
   </script>
+
 </body>
 </html>
