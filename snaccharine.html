@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snaccharine — Haris Omerovic</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Haris Omerovic</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="project-detail-page">
+
+    <div class="project-detail-back" data-sr>
+      <a href="projects.html">← All Projects</a>
+    </div>
+
+    <header class="project-detail-header" data-sr>
+      <h1>Snaccharine</h1>
+      <div class="project-detail-meta">
+        <span class="proj-tag">Indie Game</span>
+        <span class="proj-tag">Unity</span>
+        <span class="proj-tag">UI/UX</span>
+        <span class="proj-tag">Team Project</span>
+        <span class="proj-tag">MSU</span>
+      </div>
+    </header>
+
+    <div class="project-detail-hero" data-sr>
+      <img src="images/snaccharine.png" alt="Snaccharine screenshot" class="project-detail-img">
+    </div>
+
+    <div class="project-detail-body">
+
+      <section class="project-detail-section" data-sr>
+        <h2>Overview</h2>
+        <p>
+          Snaccharine is a game developed collaboratively as part of the Game Design program
+          at Michigan State University. The project brought together a cross-disciplinary team
+          to build a polished, complete game experience within a semester-length development cycle.
+        </p>
+        <p>
+          <em>Update this section with a description of the game's genre, mechanics, and premise.</em>
+        </p>
+      </section>
+
+      <section class="project-detail-section" data-sr>
+        <h2>My Role</h2>
+        <p>
+          I owned the UI/UX design and implementation for the project — responsible for every
+          player-facing interface element from the main menu through to in-game HUD. My process
+          started in Figma with wireframes and high-fidelity mockups, which I then built and
+          integrated directly inside Unity.
+        </p>
+        <ul class="resume-bullets" style="margin-top: 10px;">
+          <li>Designed all menus, HUD elements, and UI flows in Figma</li>
+          <li>Implemented the full UI in Unity using C# and Unity's UI Toolkit</li>
+          <li>Iterated on designs based on internal playtesting and team feedback</li>
+          <li>Collaborated across disciplines to ensure UI matched the game's visual tone</li>
+        </ul>
+      </section>
+
+      <section class="project-detail-section" data-sr>
+        <h2>Design Process</h2>
+        <p>
+          The visual identity of the UI was designed to complement the game's aesthetic — using
+          a consistent colour palette, typography, and iconography that felt native to the world
+          rather than bolted on. Early wireframes were low-fidelity and focused on layout and
+          information hierarchy before any visual polish was applied.
+        </p>
+        <p>
+          <em>Add specific design decisions, challenges, or iterations here.</em>
+        </p>
+      </section>
+
+      <section class="project-detail-section" data-sr>
+        <h2>Tools &amp; Tech</h2>
+        <ul class="proj-tech-list">
+          <li>Unity / C#</li>
+          <li>Figma (wireframing &amp; UI design)</li>
+          <li>Unity UI Toolkit</li>
+          <li>Git / version control</li>
+          <li>Cross-discipline team collaboration</li>
+        </ul>
+      </section>
+
+      <section class="project-detail-section" data-sr>
+        <div class="project-detail-links">
+          <a href="https://www.artstation.com/artwork/x3J9Wr" target="_blank" class="btn-primary">View on ArtStation →</a>
+          <a href="projects.html" class="btn-outline">Back to Projects</a>
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Haris Omerovic</p>
+    <nav class="footer-links">
+      <a href="resume.html">Resume</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </footer>
+
+  <script>
+    ScrollReveal().reveal('[data-sr]', { delay: 150, distance: '30px', origin: 'bottom', duration: 600, interval: 100 });
+  </script>
+
+</body>
+</html>

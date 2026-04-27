@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S Kart GO — Haris Omerovic</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Haris Omerovic</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="project-detail-page">
+
+    <div class="project-detail-back" data-sr>
+      <a href="projects.html">← All Projects</a>
+    </div>
+
+    <header class="project-detail-header" data-sr>
+      <h1>S Kart GO</h1>
+      <div class="project-detail-meta">
+        <span class="proj-tag">Kart Racer</span>
+        <span class="proj-tag">Unity</span>
+        <span class="proj-tag">UI/UX</span>
+        <span class="proj-tag">Team Project</span>
+        <span class="proj-tag">MSU</span>
+      </div>
+    </header>
+
+    <div class="project-detail-hero" data-sr>
+      <img src="images/Skartgo.png" alt="S Kart GO screenshot" class="project-detail-img">
+    </div>
+
+    <div class="project-detail-body">
+
+      <section class="project-detail-section" data-sr>
+        <h2>Overview</h2>
+        <p>
+          S Kart GO is a kart racing game developed collaboratively as part of the Game Design
+          program at Michigan State University. Built in Unity by a cross-disciplinary team, the
+          game brings together racing mechanics, character variety, and fast-paced competitive play.
+        </p>
+        <p>
+          <em>Update this section with more detail about the game's setting, modes, or unique mechanics.</em>
+        </p>
+      </section>
+
+      <section class="project-detail-section" data-sr>
+        <h2>My Role</h2>
+        <p>
+          I was responsible for the full UI/UX design and implementation on the project. Kart
+          racers present unique interface challenges — the HUD needs to communicate speed,
+          position, lap count, and item status at a glance without pulling the player's attention
+          from the track.
+        </p>
+        <ul class="resume-bullets" style="margin-top: 10px;">
+          <li>Designed the race HUD, results screen, character select, and main menu in Figma</li>
+          <li>Built and integrated all UI elements in Unity using C# and the UI Toolkit</li>
+          <li>Iterated on HUD layout through multiple playtesting sessions to reduce visual clutter</li>
+          <li>Established typography and icon systems consistent across all screens</li>
+          <li>Collaborated with artists and programmers to align UI with the game's visual style</li>
+        </ul>
+      </section>
+
+      <section class="project-detail-section" data-sr>
+        <h2>Design Challenges</h2>
+        <p>
+          The core HUD challenge was information density — a kart racer needs to surface race
+          position, current lap, speed, and active power-up simultaneously, all while the player
+          is focused on the road. I went through three major HUD layout iterations, progressively
+          reducing clutter by moving from text-heavy readouts to icon-based indicators and placing
+          critical info at the corners of the screen within natural peripheral vision.
+        </p>
+        <p>
+          <em>Add any other specific design decisions or challenges here.</em>
+        </p>
+      </section>
+
+      <section class="project-detail-section" data-sr>
+        <h2>Tools &amp; Tech</h2>
+        <ul class="proj-tech-list">
+          <li>Unity / C#</li>
+          <li>Figma (wireframing &amp; UI design)</li>
+          <li>Unity UI Toolkit</li>
+          <li>Git / version control</li>
+          <li>Cross-discipline team collaboration</li>
+        </ul>
+      </section>
+
+      <section class="project-detail-section" data-sr>
+        <div class="project-detail-links">
+          <a href="https://www.artstation.com/artwork/L4mr0k" target="_blank" class="btn-primary">View on ArtStation →</a>
+          <a href="projects.html" class="btn-outline">Back to Projects</a>
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Haris Omerovic</p>
+    <nav class="footer-links">
+      <a href="resume.html">Resume</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </footer>
+
+  <script>
+    ScrollReveal().reveal('[data-sr]', { delay: 150, distance: '30px', origin: 'bottom', duration: 600, interval: 100 });
+  </script>
+
+</body>
+</html>
