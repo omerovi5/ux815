@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Backyard Brawl — Haris Omerovic</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Haris Omerovic</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="project-detail-page">
+
+    <div class="project-detail-back" data-sr>
+      <a href="projects.html">← All Projects</a>
+    </div>
+
+    <header class="project-detail-header" data-sr>
+      <h1>Backyard Brawl</h1>
+      <div class="project-detail-meta">
+        <span class="proj-tag">Party Game</span>
+        <span class="proj-tag">Unity</span>
+        <span class="proj-tag">Multiplayer</span>
+        <span class="proj-tag">UI/UX</span>
+      </div>
+    </header>
+
+    <div class="project-detail-hero" data-sr>
+      <img src="images/backyard-brawl.png" alt="Backyard Brawl screenshot" class="project-detail-img" onerror="this.classList.add('project-img-placeholder')">
+    </div>
+
+    <div class="project-detail-body">
+
+      <section class="project-detail-section" data-sr>
+        <h2>Overview</h2>
+        <p>
+          Backyard Brawl is a fast, fun party game featuring two distinct game
+          modes designed for local multiplayer:
+        </p>
+        <ul class="resume-bullets">
+          <li><strong>Candy Collectathon</strong> — A trick-or-treating royale set on Halloween night. Players knock on houses to collect candy and race to deposit it into the witch's cauldron to score points before other players steal it.</li>
+          <li><strong>LaserBall</strong> — An arcade-style soccer match where players score goals using laser-powered shots and wild power-ups.</li>
+        </ul>
+      </section>
+
+      <section class="project-detail-section" data-sr>
+        <h2>My Role</h2>
+        <p>
+          I led the UI/UX design and implementation for the entire game — from
+          the main menu and mode selection screens to in-game HUDs for both
+          modes. Each mode needed its own visual language while still feeling
+          cohesive as a single product, which was the core design challenge I
+          solved through consistent typography and a shared colour system.
+        </p>
+      </section>
+
+      <section class="project-detail-section" data-sr>
+        <h2>Tools &amp; Tech</h2>
+        <ul class="proj-tech-list">
+          <li>Unity 6 / C#</li>
+          <li>Figma (UI design &amp; prototyping)</li>
+          <li>itch.io deployment</li>
+          <li>Cross-discipline team collaboration</li>
+        </ul>
+      </section>
+
+      <section class="project-detail-section" data-sr>
+        <div class="project-detail-links">
+          <a href="https://hariso.itch.io/backyardbrawl" target="_blank" class="btn-primary">Play on itch.io →</a>
+          <a href="projects.html" class="btn-outline">Back to Projects</a>
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Haris Omerovic</p>
+    <nav class="footer-links">
+      <a href="resume.html">Resume</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </footer>
+
+  <script>
+    ScrollReveal().reveal('[data-sr]', { delay: 150, distance: '30px', origin: 'bottom', duration: 600, interval: 100 });
+  </script>
+
+</body>
+</html>

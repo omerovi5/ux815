@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volley-Guns — Haris Omerovic</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Haris Omerovic</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="project-detail-page">
+
+    <div class="project-detail-back" data-sr>
+      <a href="projects.html">← All Projects</a>
+    </div>
+
+    <header class="project-detail-header" data-sr>
+      <h1>Volley-Guns</h1>
+      <div class="project-detail-meta">
+        <span class="proj-tag">Indie Game</span>
+        <span class="proj-tag">Unity</span>
+        <span class="proj-tag">UI/UX</span>
+        <span class="proj-tag">Team Project</span>
+      </div>
+    </header>
+
+    <div class="project-detail-hero" data-sr>
+      <img src="images/volley-guns.png" alt="Volley-Guns screenshot" class="project-detail-img" onerror="this.classList.add('project-img-placeholder')">
+    </div>
+
+    <div class="project-detail-body">
+
+      <section class="project-detail-section" data-sr>
+        <h2>Overview</h2>
+        <p>
+          Volley-Guns is an independent video game about playing volleyball with
+          various firearms. Players serve, spike, and block using an arsenal of
+          weapons — each with unique physics and trajectory properties that
+          change how the volleyball behaves mid-air.
+        </p>
+        <p>
+          The game was developed collaboratively with my fellow peers from my
+          Game Design Minor cohort at Michigan State University over the course
+          of more than a year, and is soon to be released on Steam.
+        </p>
+      </section>
+
+      <section class="project-detail-section" data-sr>
+        <h2>My Role</h2>
+        <p>
+          As the UI/UX designer on the team, I was responsible for designing
+          and implementing all in-game menus, HUD elements, and the main menu
+          experience. I created wireframes and high-fidelity mockups in Figma
+          before bringing them to life inside Unity 6 using C# and Unity's
+          UI Toolkit.
+        </p>
+      </section>
+
+      <section class="project-detail-section" data-sr>
+        <h2>Tools &amp; Tech</h2>
+        <ul class="proj-tech-list">
+          <li>Unity 6 / C#</li>
+          <li>Figma (wireframing &amp; UI design)</li>
+          <li>Git / version control</li>
+          <li>Team collaboration across disciplines</li>
+        </ul>
+      </section>
+
+      <section class="project-detail-section" data-sr>
+        <div class="project-detail-links">
+          <a href="https://store.steampowered.com/app/3952510/Volley_Guns/" target="_blank" class="btn-primary">View on Steam →</a>
+          <a href="projects.html" class="btn-outline">Back to Projects</a>
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Haris Omerovic</p>
+    <nav class="footer-links">
+      <a href="resume.html">Resume</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </footer>
+
+  <script>
+    ScrollReveal().reveal('[data-sr]', { delay: 150, distance: '30px', origin: 'bottom', duration: 600, interval: 100 });
+  </script>
+
+</body>
+</html>
