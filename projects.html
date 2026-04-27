@@ -1,45 +1,103 @@
-<!-- ========================= -->
-<!-- projects.html -->
-<!-- ========================= -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects</title>
+  <title>Projects — Haris Omerovic</title>
   <link rel="stylesheet" href="styles.css">
   <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
+
   <nav class="navbar">
     <div class="logo">Haris Omerovic</div>
     <ul class="nav-links">
-      <li><a href="index.html">Home/About</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="resume.html">Resume</a></li>
       <li><a href="projects.html" class="active">Projects</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
-  <section class="projects">
-    <h1 class="underline">Projects</h1>
+  <main class="projects-page">
+    <h1 class="section-heading" data-sr>Projects</h1>
 
-    <div class="project-card">
-      <h2>Project 1</h2>
-      <p>Short description of your project.</p>
-      <a href="project1.html">View Details</a>
+    <article class="project-entry" data-sr>
+      <img src="images/volley-guns.png" alt="Volley-Guns screenshot" class="project-img" onerror="this.classList.add('project-img-placeholder')">
+      <div class="project-body">
+        <h2>Volley-Guns</h2>
+        <p>
+          Volley-Guns is an independent video game about playing volleyball with
+          various firearms that has been developed by me and my fellow peers from
+          my Game Design Minor cohort for over a year now and is soon to be
+          released on Steam!
+        </p>
+        <a href="volley-guns.html" class="more-link">More →</a>
+      </div>
+    </article>
+
+    <article class="project-entry" data-sr>
+      <img src="images/backyard-brawl.png" alt="Backyard Brawl screenshot" class="project-img" onerror="this.classList.add('project-img-placeholder')">
+      <div class="project-body">
+        <h2>Backyard Brawl</h2>
+        <p>
+          Backyard Brawl is a party game featuring two exciting game modes!
+          <em>Candy Collectathon</em> and <em>LaserBall</em>. Candy Collectathon
+          is a trick-or-treating royale — knock on houses to collect candy and
+          deposit them into the witch's cauldron to score points. LaserBall is
+          an arcade soccer match.
+        </p>
+        <a href="backyard-brawl.html" class="more-link">More →</a>
+      </div>
+    </article>
+
+    <article class="project-entry" data-sr>
+      <img src="images/planet-fitness.png" alt="Planet Fitness Research Project" class="project-img" onerror="this.classList.add('project-img-placeholder')">
+      <div class="project-body">
+        <h2>Planet Fitness Research Project</h2>
+        <p>
+          A UX research project conducting a full usability study of the Planet
+          Fitness mobile app — including user interviews, persona mapping,
+          journey mapping, and a Figma redesign prototype addressing key pain
+          points discovered during evaluation.
+        </p>
+        <a href="planet-fitness.html" class="more-link">More →</a>
+      </div>
+    </article>
+
+    <article class="project-entry" data-sr>
+      <img src="images/titanfall.png" alt="Titanfall 2 UI Redesign" class="project-img" onerror="this.classList.add('project-img-placeholder')">
+      <div class="project-body">
+        <h2>Titanfall 2 UI Redesign</h2>
+        <p>
+          A UX/UI case study in which I researched and redesigned several
+          screens from Titanfall 2's interface — applying modern UX principles
+          to an existing game UI. Published on ArtStation.
+        </p>
+        <a href="titanfall.html" class="more-link">More →</a>
+      </div>
+    </article>
+
+    <div class="projects-scroll-hint" aria-hidden="true">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+        <path d="M6 12l10 10 10-10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
     </div>
 
-    <div class="project-card">
-      <h2>Project 2</h2>
-      <p>Short description of your project.</p>
-      <a href="project2.html">View Details</a>
-    </div>
+  </main>
 
-  </section>
+  <footer class="site-footer">
+    <p>&copy; 2026 Haris Omerovic</p>
+    <nav class="footer-links">
+      <a href="resume.html">Resume</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </footer>
 
   <script>
-    ScrollReveal().reveal('.project-card', { interval: 200, distance: '30px', origin: 'bottom' });
+    ScrollReveal().reveal('[data-sr]', { delay: 150, distance: '40px', origin: 'bottom', duration: 700, interval: 120 });
   </script>
+
 </body>
 </html>
