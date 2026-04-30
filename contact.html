@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resume — Haris Omerovic</title>
+  <title>Contact — Haris Omerovic</title>
   <link rel="stylesheet" href="styles.css">
   <script src="https://unpkg.com/scrollreveal"></script>
 </head>
@@ -13,31 +13,149 @@
     <div class="logo">Haris Omerovic</div>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="resume.html" class="active">Resume</a></li>
+      <li><a href="resume.html">Resume</a></li>
       <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
     </ul>
   </nav>
 
-  <main class="resume-page">
+  <main class="contact-page">
 
-    <div class="resume-header">
-      <h1 class="resume-name">Haris Omerovic</h1>
-      <p class="resume-pronounce">(pronounced "hareese")</p>
-      <div class="resume-contact-bar">
-        <a href="mailto:harisomerovic62@gmail.com">harisomerovic62@gmail.com</a>
-        <span>·</span>
-        <span>616-337-5567</span>
-        <span>·</span>
-        <span>Grand Rapids, MI 49548</span>
-        <span>·</span>
-        <a href="https://www.artstation.com/user-5791258" target="_blank">ArtStation</a>
-      </div>
+    <!-- Page header -->
+    <div class="contact-header" data-sr>
+      <h1 class="section-heading">Get in Touch</h1>
+      <p class="contact-intro">
+        Whether you're interested in collaborating on a game, need a UX researcher
+        for a project, or just want to talk design — feel free to reach out.
+        I'm always happy to connect.
+      </p>
     </div>
 
+    <!-- Two-column layout: form left, info right -->
+    <div class="contact-layout">
 
+      <!-- ── Contact form ── -->
+      <div class="contact-form-wrap" data-sr>
+        <h2 class="contact-section-label">Send a Message</h2>
 
- 
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="fname" placeholder="Jane" required>
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname" placeholder="Doe" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="" disabled selected>Select a topic…</option>
+              <option>Game Design Collaboration</option>
+              <option>UX Research Project</option>
+              <option>UI/UX Design Work</option>
+              <option>Job Opportunity</option>
+              <option>General Inquiry</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Tell me what you're working on…" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary contact-submit">Send Message</button>
+
+          <p class="form-note">I typically respond within 1–2 business days.</p>
+        </form>
+      </div>
+
+      <!-- ── Contact info ── -->
+      <aside class="contact-info" data-sr>
+
+        <div class="contact-info-block">
+          <h2 class="contact-section-label">Contact Details</h2>
+          <ul class="contact-detail-list">
+            <li>
+              <div class="contact-detail-icon">✉</div>
+              <div>
+                <div class="contact-detail-label">Email</div>
+                <a href="mailto:harisomerovic62@gmail.com">harisomerovic62@gmail.com</a>
+              </div>
+            </li>
+            <li>
+              <div class="contact-detail-icon">📞</div>
+              <div>
+                <div class="contact-detail-label">Phone</div>
+                <span>616-337-5567</span>
+              </div>
+            </li>
+            <li>
+              <div class="contact-detail-icon">📍</div>
+              <div>
+                <div class="contact-detail-label">Location</div>
+                <span>Grand Rapids, MI 49548</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-info-block">
+          <h2 class="contact-section-label">Find Me Online</h2>
+          <ul class="contact-links-list">
+            <li>
+              <a href="https://www.artstation.com/user-5791258" target="_blank" class="contact-ext-link">
+                <span class="contact-ext-icon">🎨</span>
+                <div>
+                  <div class="contact-ext-label">ArtStation</div>
+                  <div class="contact-ext-sub">Portfolio &amp; case studies</div>
+                </div>
+                <span class="contact-ext-arrow">→</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://store.steampowered.com/app/3952510/Volley_Guns/" target="_blank" class="contact-ext-link">
+                <span class="contact-ext-icon">🎮</span>
+                <div>
+                  <div class="contact-ext-label">Volley-Guns on Steam</div>
+                  <div class="contact-ext-sub">Latest game project</div>
+                </div>
+                <span class="contact-ext-arrow">→</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://hariso.itch.io/backyardbrawl" target="_blank" class="contact-ext-link">
+                <span class="contact-ext-icon">🕹</span>
+                <div>
+                  <div class="contact-ext-label">itch.io</div>
+                  <div class="contact-ext-sub">Play Backyard Brawl</div>
+                </div>
+                <span class="contact-ext-arrow">→</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-availability">
+          <div class="availability-dot"></div>
+          <div>
+            <div class="availability-title">Available for opportunities</div>
+            <div class="availability-sub">Open to game UI roles, UX research contracts, and collaborative indie projects.</div>
+          </div>
+        </div>
+
+      </aside>
+
+    </div>
+
   </main>
 
   <footer class="site-footer">
@@ -50,7 +168,16 @@
   </footer>
 
   <script>
-    ScrollReveal().reveal('[data-sr]', { delay: 150, distance: '30px', origin: 'bottom', duration: 600, interval: 100 });
+    ScrollReveal().reveal('[data-sr]', { delay: 150, distance: '30px', origin: 'bottom', duration: 600, interval: 80 });
+
+    // Simple confirmation on submit (swap out for a real backend/Formspree as needed)
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const btn = this.querySelector('.contact-submit');
+      btn.textContent = '✓ Message Sent';
+      btn.style.background = 'var(--green-accent)';
+      btn.disabled = true;
+    });
   </script>
 
 </body>
